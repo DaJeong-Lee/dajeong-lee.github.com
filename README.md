@@ -1,3 +1,6 @@
+Local run cmd
+> jekyll serve
+
 # Flexible-Jekyll is a simple and clean theme for Jekyll
 
 ![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
@@ -29,3 +32,4 @@ Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is importa
 ### License
 
 GNU General Public License v3.0
+
