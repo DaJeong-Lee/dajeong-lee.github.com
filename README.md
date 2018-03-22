@@ -2,6 +2,7 @@
 
 
 ###### Local run command
+> source activate myenv
 > jekyll serve
 
 --------------
