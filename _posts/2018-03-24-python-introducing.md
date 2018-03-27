@@ -141,3 +141,17 @@ result = edit_story(stairs, lambda w: w.capitalize()+'!')
 ## 이름에 _와 __ 사용
 #### _이름은 주로 한 모듈내에서 사용하는 이름에 붙인다
 #### __이름__은 파이썬 내의 예약된 이름이다
+
+## Array
+<pre>
+<code>
+nums = range(1,5)
+print(nums[2:4])
+print(nums[2:]) #index 2부터 끝까지
+print(nums[:4]) # 처음부터 index 4까지
+print(nums[:-1]) # 마지막 1개를 빼고 다 가져옴 (-는 뒤에서부터 index)
+</code>
+</pre>
+
+### Queue Runners: 텐서플로우에서 제공하는, 메모리가 작아도 데이터를 계산할 수있는 모듈
+* 여러 파일에서 읽어서 queue에 쌓아놓고 reader -> decoder -> queue에 쌓음
