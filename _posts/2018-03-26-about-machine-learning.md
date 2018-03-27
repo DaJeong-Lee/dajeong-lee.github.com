@@ -63,7 +63,8 @@ Cost function은 Cost(W,b) W와 b의 function임. 이 값을 최소화하는 값
 > 참고: 1e-5는 0.00001, 1e5는 100000
 * [실습 source](https://github.com/DaJeong-Lee/tensorflow) multi_variable_regression.py
 
-
+### Queue Runners: 텐서플로우에서 제공하는, 메모리가 작아도 데이터를 계산할 수있는 모듈
+* 여러 파일에서 읽어서 queue에 쌓아놓고 reader -> decoder -> queue에 쌓음
 
 
 

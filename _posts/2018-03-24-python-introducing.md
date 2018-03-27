@@ -153,5 +153,3 @@ print(nums[:-1]) # 마지막 1개를 빼고 다 가져옴 (-는 뒤에서부터 
 </code>
 </pre>
 
-### Queue Runners: 텐서플로우에서 제공하는, 메모리가 작아도 데이터를 계산할 수있는 모듈
-* 여러 파일에서 읽어서 queue에 쌓아놓고 reader -> decoder -> queue에 쌓음
