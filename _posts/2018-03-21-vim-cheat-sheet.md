@@ -3,7 +3,7 @@ layout: post
 title: Vim cheet sheet
 date: 2018-03-21
 description: 유용한 vim 명령어 모음
-tags:
+tags: [cheet]
 ---
 
 # Vim cheat sheet
