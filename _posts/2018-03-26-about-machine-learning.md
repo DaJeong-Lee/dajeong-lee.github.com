@@ -87,5 +87,31 @@ Cost function은 Cost(W,b) W와 b의 function임.
 * 참고. <https://www.kaggle.com>에 많은 데이터 있음
 * [실습 source](https://github.com/DaJeong-Lee/tensorflow) logistic_classifier.py
 
+## Softmax regresstion
+
+### Multinominal classification: 여러개 X가 있는데 어떤 X인지 예측하기 위해 사용
+* 3개 A, B, C가 있을 때 A or not, B or not, C or not 3개의 binary classification으로 구현 가능
+* A or not 인지 알려면 0~1사이의 값으로 변환시켜주는 sigmod를 사용
+
+### Hypothesis function
+* Softmax function: 결과값이 0 ~ 1 이면서, 전체의 합이 1이 되도록 만들어주는 함수
+        [ 0.7 ] a
+Y' =    [ 0.2 ] b   -> a가 나올확률이 0.7 -> "one hot encoding" -> 제일 큰거 하나만 결과로 출력 -> a
+        [ 0.1 ] c
+
+### Cost function
+* cross-entropy function: softmax를 사용한 예측값과 실제 결과의 차이를 보기위해 사용
+    * **Cost function**의 목적이 **결과를 잘 예측했으면 0, 틀렸으면 아주 큰값**을 주는것 -> 그 목적에 부함하는 function이라서 사용함.
+
+* logistic cos VS cross entry: 달라보이는데 사실은 같은 function.
+* cost function이 밥그릇 엎은것 처럼 생겼음 -> Gradient Descent Algorithm 사용가능 -> 기울기를 타고 내려가면서 w의 최소값을 찾음.
+* [실습 source](https://github.com/DaJeong-Lee/tensorflow) fency_softmax_classification.py
+* 실습 결과: 분류를 잘 예측해서 놀랍다 -> 분류가 잘 태깅된 데이터가 있는게 중요하다
+
+## 소감
+* 머신러닝에서는 **가설(hypothesis)과 Cost function**을 잘 만드는게 매우 중요하다!
+* 맨 마지막 실습했던 Multinominal classification은 엄청 신기했다. 동물들의 특징을 학습해서 동물을 맞추는게..
+
+
 
 
