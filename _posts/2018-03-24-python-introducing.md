@@ -151,7 +151,6 @@ print(nums[2:]) #index 2부터 끝까지
 print(nums[:4]) # 처음부터 index 4까지
 print(nums[:-1]) # 마지막 1개를 빼고 다 가져옴 (-는 뒤에서부터 index)
 </code>
-### numpy: 배열을 다루는데 여러 기능이 있는 파이썬 패키지
-
 </pre>
 
+### numpy: 배열을 다루는데 여러 기능이 있는 파이썬 패키지
