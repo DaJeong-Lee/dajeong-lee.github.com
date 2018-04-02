@@ -7,8 +7,6 @@ img: java-annotation.png
 tags:
 ---
 
-# Java annotation이란
-
 ## Java annotation 설명
 
 Java에서 **@어노테이션은** **코드 메타테이터**로 사용됨

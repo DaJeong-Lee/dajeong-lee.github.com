@@ -7,8 +7,6 @@ img: chrome-developer-tool.png
 tags:
 ---
 
-# Chrome 개발자 도구 활용법
-
 ## 1. Ajax request 확인
 > 위의 이미지처럼
 >

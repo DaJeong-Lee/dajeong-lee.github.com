@@ -6,8 +6,6 @@ description: 유용한 vim 명령어 모음
 tags: [cheet]
 ---
 
-# Vim cheat sheet
-
 ## 유용한 vim 명령어
 
  행동 | 명령어

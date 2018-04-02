@@ -6,7 +6,6 @@ description:
 tags:
 ---
 
-# 모두를 위한 딥러닝(2)
 ##### [인프런 - 모두를 위한 딥러닝 강좌](https://www.inflearn.com/course/%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%EA%B0%95%EC%A2%8C/)
 
 ## MachineLearning 실용과 팁
@@ -54,7 +53,3 @@ tags:
 * 28*28 총 784개 픽셀에 번호가 적혀있음(x), 결과는 0~9(y)
 * tensorflow에서 데이터를 제공해줌
 * epoch: 전체 데이터셋을 한번 학습시킨것을 1 epoch이라고 함 (100개 데이터셋이 있고 batch size가 10일때, 1 epoch 완성하려면 10 loop을 돌아야함)
-
-
-
-

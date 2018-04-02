@@ -6,8 +6,6 @@ description: Python 문법 (Java와 비교해서 다른점 위주로..)
 tags:
 ---
 
-# Python 문법 (Java와 비교해서 다른점 위주로..)
-
 ## 1. 튜플은 for에서 각각 k, v 따로 얻을 수 있음
 <pre>
 <code>
