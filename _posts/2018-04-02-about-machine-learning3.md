@@ -75,18 +75,15 @@ tags:
 
 ### 3개의 nueral network로 풀기
 <pre>
+    각각은 logistic function f(x) = wx * b
    [x1]
    [x2] => [y1]
                  => [y']
    [x1] => [y2]
    [x2]
+
+   맞는 W와 b가 주어졌다고 가졍하면 xor를 풀 수 있음
+   -> 그러나, 맞는 W와 b를 찾아내기가 매우 힘듬
+   -> 이걸 구하기위해 back-propagation 알고리즘 등장
+   -> 끝까지 계산한다음에 틀리면 끝에서부터 앞으로 돌아가면서 계산함
 </pre>
-
-
-
-
-
-
-
-
-
