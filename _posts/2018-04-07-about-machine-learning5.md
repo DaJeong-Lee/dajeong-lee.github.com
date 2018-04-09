@@ -58,6 +58,37 @@ tags:
     * 왜 이렇게 하는게 학습이 잘되는지는 밝혀지지 않음
 * CNN for sentence classification(2014, Yoon Kim): 텍스트를 convolutional network 사용
 * Deepmind's Alpahago
+* CNN은 특히 이미지 분석에 큰 기여를 함
+
+## CNN 실습
+* 실습1 <https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-0-cnn_basics.ipynb>
+    * (1,3,3,1): 1장의 이미지, 3*3 pixel, 1 color
+    * Filter (2,2,1,1): filter는 2*2, 1 color, 1개 filter 사용, 계산을 쉽게 하기 위해 [1,...]을 사용
+    * stride는 1: 1씩 옆으로 움직임
+    * Padding SAME 옵션: convolution 결과 이미지 사이즈를 원본이랑 동일하게 맞춤, 필요한 padding을 0으로 채움
+    * filter를 3장 쓰면 1장의 원본이미지로부터 3장의 이미지가 나옴
+        > tf.nn.conv2d(원본, 필터, stride, padding) 사용하면 filter 결과값이 나옴
+    * MaxPooling
+        > tf.nn.max_pool(원본, 필터(ksize), stride, padding)
+
+* 실습2. MNIST 99% 정확도 만들기 <https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-1-mnist_cnn.py>
+    * 그림 입력 784개
+    * reshape(-1, 28,28, 1): reshape(이미지를 입력으로) -1(n개이미지), 28*28 픽셀, 색깔 1개
+    * filter (3,3,1,32): 3*3픽셀, 색깔1개, 32개 필터 사용
+    * 첫번째 max_pool 까지 실행된 결과 (?,14,14,32)
+    * 두번째 max_pool 까지 실행된 결과 (?,7,7,64)
+    * 마지막 reshape(): 입체적인 구조를 쭉 펴는데 사용, 결과 (?, 3136)
+    * Fully Connected: shape=[7*7*64, 10] : 입력은 3316, 출력은 10 (숫자 0~9까지)
+    * 여러 단계로 연결하면 99% 정확도 달성 <https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-2-mnist_deep_cnn.py>
+
+* 실습3.
+    * 위 실습2를 python class로 정리
+        > <https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-3-mnist_cnn_class.py>
+    * tf.layers 패키지: conv2d, max_pool, dense 등 함수가 있고, 기존보다 단순하게 사용 가능 (tf.nn.conv2d() 대신 tf.layers.conv2d()사용)
+        > <https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-4-mnist_cnn_layers.py>
+    * Ensemble: 여러개의 모델을 독립적으로 학습시키고, 각각 모델의 예측 결과를 조합(결과들을 sum)해서 최종 결과를 냄
+        > <https://github.com/hunkim/DeepLearningZeroToAll/blob/master/lab-11-5-mnist_cnn_ensemble_layers.py>
+* **결론**: tf.layers 쓰자!
 
 
 
