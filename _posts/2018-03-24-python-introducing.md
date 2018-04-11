@@ -151,4 +151,10 @@ print(nums[:-1]) # 마지막 1개를 빼고 다 가져옴 (-는 뒤에서부터 
 </code>
 </pre>
 
+#### enumerate(array 변수): (index, value) 튜플을 리턴, index가 필요할 때 사용
+> for i, name in enumerate(['aaa','bbb']): 로 쓸 때 유용
+
 ### numpy: 배열을 다루는데 여러 기능이 있는 파이썬 패키지
+### set(): 중복데이터 없는 자료구조가 필요할 때 사용
+
+
