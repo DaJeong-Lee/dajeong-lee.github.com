@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Progresive web app
+title: Progressive web app
 date: 2019-02-13
 description: 프로그레시브 웹앱(PWA)
 tags:
